@@ -215,3 +215,89 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+ul {
+  list-style: none;
+  
+    }
+
+
+/* Homework - Added Responsive CSS */
+
+@media only screen and (max-width: 980px) {
+  
+  .work {
+    width: 45%;
+  }
+
+  #main-container {
+  min-width:65%;
+  width:65%;
+  float:left;
+  position:relative;
+  left:5%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #main-container {
+    min-width:90%;
+    width:90%;
+    position:relative;
+    margin:auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  /* Can't use position:static here, because it's disabling my Anchor links in the nav bar.  Adjusted margins instead to accomodate header size on small screens. */
+
+  .contact-form {
+    position:relative;
+    left: -15px;
+    width: 100%;
+  }
+
+  .submit-button {
+    position:relative;
+    width: 90%;
+    margin:auto;
+    float:right;
+  }
+
+  #main-container {
+    min-width:90%;
+    width:90%;
+    float:left;
+    position:relative;
+    margin:auto;
+    top: 15px;
+  }
+
+  .main-section p {
+    margin-top: 3%;
+  }
+
+  .auth-image {
+    width:100%;
+    margin-bottom: 3%;
+  }
+
+  .work {
+    width: 95%;
+    margin-left:2.5%;
+  }
+  
+  #logo{
+  width:100%;
+  }
+
+  .nav {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  }
+}
